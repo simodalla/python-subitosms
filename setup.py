@@ -19,7 +19,7 @@ setup(
     license = 'BSD License', # example license
     description = 'APis wrapper to SubitoSMS APIs.',
     long_description = README,
-    url = 'http://www.comune.zolapredosa.bo.it',
+    url = 'https://github.com/simodalla/python-subitosms',
     author = 'Simone Dalla',
     author_email = 'simodalla@gmail.com',
     classifiers = [
