@@ -185,8 +185,8 @@ class PhpGatewaySubitoSms(GatewaySubitoSms):
             url += '&test=1'
         if data is None:
             data = self.prepare_data()
-        for k, v in data.items():
-            data[k] = v.encode('utf-8')
+        for k in data:
+            data[k] = data[k].encode('utf-8')
         logging.debug('make_request: {} ({})'.format(url, data))
         req = Request(url, data.encode('utf8'))
         response = urlopen(req)
